@@ -108,8 +108,8 @@ app.get('/login/:id', function(req,res,next){
 
 
 // add tasks by id
-app.post('/login/:user_id', function(req,res,next){
-  var user_id = req.params.user_id;
+app.post('/login/:id', function(req,res,next){
+  var user_id = req.params.id;
   var taskname = req.body.taskname;
   var description = req.body.description;
   
@@ -140,6 +140,17 @@ app.get("/delete/:id", function(req, res,next) {
 });
 
 
+// get task description by id
+app.get('/login/tasks/:id', function(req,res,next){
+  var userId = req.params.id;
+  db.one('SELECT * FROM toDoList WHERE id = $1', userId)
+   .then(function (data) {
+     res.render('show', {desc:data.description} );
+   })
+   .catch(function(err){
+    return next(err);
+   });
+});
 
 
 /*  "/users/:id"
