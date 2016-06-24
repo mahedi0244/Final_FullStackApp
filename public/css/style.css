@@ -6,7 +6,7 @@ h2{
 	color: white;
 }
 body{
-	background-image: url("http://previews.123rf.com/images/grgroup/grgroup1205/grgroup120500027/13447587-old-keys-with-link-chain-black-background-with-text-Stock-Vector.jpg");
+	background-color: black;
 }
 div{
 	text-align: center;
@@ -17,9 +17,35 @@ div{
 	padding-bottom: 30px;
 	border:1px solid black;
 }
+#taskname{
+	color: white;
+}
 p{
 	color: red;
 }
 a{
 	color: green;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: #4CAF50;
+}
+
