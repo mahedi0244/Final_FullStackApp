@@ -1,0 +1,13 @@
+
+<h2>{{user.username}}'s ToDoList</h2>
+<ul>	
+	{{#each toDoList}}
+	<li><a href="/login/{{this.id}}">{{this.taskname}}</a><a href="/delete/{{id}}"> delete</a></li>
+	{{/each}}
+</ul>
+
+<form action = "/login/{{user.id}}" method="POST">
+	<input type="text" placeholder = "taskname" name="taskname">
+	<input type="text" placeholder = "description" name="description">
+	<input type="submit">	
+</form>
