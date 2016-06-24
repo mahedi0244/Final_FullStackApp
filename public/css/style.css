@@ -1,0 +1,25 @@
+h1{
+	font-family: arial;
+	color: white;
+}
+h2{
+	color: white;
+}
+body{
+	background-image: url("http://previews.123rf.com/images/grgroup/grgroup1205/grgroup120500027/13447587-old-keys-with-link-chain-black-background-with-text-Stock-Vector.jpg");
+}
+div{
+	text-align: center;
+	border:1px solid black;
+}
+#taskdiv{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border:1px solid black;
+}
+p{
+	color: red;
+}
+a{
+	color: green;
+}
