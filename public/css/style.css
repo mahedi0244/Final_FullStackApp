@@ -1,8 +1,9 @@
 h1{
-	font-family: arial;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	color: white;
 }
 h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 	color: white;
 }
 body{
@@ -10,12 +11,27 @@ body{
 }
 div{
 	text-align: center;
-	border:1px solid black;
+	border:1px solid gray;
+}
+#headDiv{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:1px solid gray;
+}
+#form{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border:1px solid gray;
+}
+#register{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border:1px solid gray;
 }
 #taskdiv{
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border:1px solid black;
+	border:1px solid gray;
 }
 #taskname{
 	color: white;
